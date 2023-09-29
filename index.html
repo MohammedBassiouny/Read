@@ -4,6 +4,15 @@
         <link rel="stylesheet" href="css/READ.css">
         <link rel="stylesheet" href="css/all.css">
         <meta charset="utf-8">
+        <script>
+    let distances = [10, 20, 15, 12, 18];
+
+    let totalDistance = distances.reduce((a, b) => a + b, 0);
+
+    let percentages = distances.map(distance => (distance / totalDistance) * 100);
+
+    document.getElementById("results").innerHTML = percentages; 
+  </script>
     </head>
     <body>
                                        <!--Header -->
